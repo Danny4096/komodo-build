@@ -9,7 +9,7 @@ export AASM_PREFIX="${INSTALL_PREFIX}/aasm"
 export X_INCLUDES=${X_INCLUDES:-}
 export X_LIBRARIES=${X_LIBRARIES:-}
 export CC=${CC:-}
-
+export CFLAGS="${CFLAGS:-} -fcommon"
 if [ -z ${CC} ]; then
   CC="gcc"
 fi
